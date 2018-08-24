@@ -55,7 +55,7 @@
   } else {
     var scale = height*.85;
   }
-  globe.projection.scale(275).translate([height/2, width/2]).rotate([0, -10, 0]);
+  globe.projection.scale(275).translate([300, 300]).rotate([0, -10, 0]);
 
   //load up lngs and lats from csv file to give to pings
   cityInfo = [];
