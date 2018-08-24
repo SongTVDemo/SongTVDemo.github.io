@@ -1,0 +1,85 @@
+.login{
+  display: inline-block;
+  height:40px;
+  min-width:100px;
+  margin: 0px 10px;
+  text-align:center;
+  line-height:40px;
+  position: absolute;
+  right:170px;
+}
+
+.vert{
+  text-align:center;
+  line-height:40px;
+  position: absolute;
+  right:170px;
+}
+
+.new_band{
+  height:40px;
+  min-width:170px;
+  text-align:center;
+  line-height:40px;
+  position: absolute;
+  right:0px;
+}
+
+.search_container{
+  position: relative;
+  top: 20px;
+}
+
+.search_bar{
+  position: relative;
+  width:75%;
+  margin:2%;
+  height:40px;
+}
+
+.search{
+  position: relative;
+  text-align: center;
+  height: 30px;
+  width: 18%;
+  right: 0px;
+}
+
+.ytplayer_d{
+  position: relative;
+  top: 40px;
+  height:40%;
+}
+
+.chart{
+  position: absolute;
+  width: 35%;
+  bottom: 70px;
+}
+
+.top{
+  position: relative;
+  left: 7%;
+  margin: 1.75%;
+}
+
+.globe{
+  position: relative;
+  width: 100%;
+  height:100%;
+}
+
+canvas{
+
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+iframe{
+  margin: 0 auto;
+  position: relative;
+  left:5%;
+  width: 90%;
+}

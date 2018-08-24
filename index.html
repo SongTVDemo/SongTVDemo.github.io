@@ -1,10 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Song TV<title>
+	<title>Song TV</title>
+	<link rel='stylesheet' type="text/css" href="CSS/main.css">
+	<link rel='stylesheet' type="text/css" href="CSS/home.css">
+	<link rel='stylesheet' type="text/css" href="CSS/login.css">
+	<script type='text/javascript' src=JS/home.js></script>
+	<script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+  <script type='text/javascript' src='globe/planetaryjs.js'></script>
 </head>
 <body>
-  <h1>Hello World</h1>
+	<div class="page_head">
+		<a class="logo" href="home.php">SongTV</a>
+		<div class='login'>
+      <span>Login</span>
+      <div class='drop-in'>
+        <form method='post' action='PHP/login.php'>
+          <table>
+            <tr>
+              <td>Username:</td>
+              <td><input type='text' name='user' value='Username' onclick=value=''><br></td>
+            </tr>
+            <tr>
+              <td>Password:</td>
+              <td><input type='password' name='pass' value='Password' onclick=value=''><br></td>
+            </tr>
+          </table>
+          <input class='logbutton' type='submit' value='Login'>
+        </form>
+        <form action='new_account.php'>
+          <input class='accbutton' type='submit' value='Create Account'>
+        </form>
+      </div>
+    </div>
+    <div class='vert'>|</div>
+    <a class='new_band' href='new_band.php'>Add a band</a>
+	</div>
+	<div class="center">
+		<div class="col-1">
+			<div class='search_container'>
+				<form id='city_change' method='GET' action='PHP/city_set.php'>
+					<select class='search_bar' type="text" name="city">
+						<option value="null">World Chart</option>
+						<option value="Los Angeles">Los Angeles</option>
+						<option value="London">London</option>
+						<option value="Madrid">Madrid</option>
+						<option value="Rio">Rio</option>
+						<option value="Tokyo">Tokyo</option>
+						<option value="Abu Dhabi">Abu Dhabi</option>
+						<option value="Pretoria">Pretoria</option>
+						<option value="Chicago">Chicago</option>
+					</select>
+					<input class='search' method='post' type='submit' value='Search'>
+				</form>
+			</div>
+			<div class='ytplayer_d'><iframe class='ytplayer_i' width=90% type='text/html' src='https://www.youtube.com/embed/py3w5fttedA?autoplay=0' frameborder='0' allowfullscreen='allowfullscreen' mozallowfullscreen='mozallowfullscreen' msallowfullscreen='msallowfullscreen' oallowfullscreen='oallowfullscreen' webkitallowfullscreen='webkitallowfullscreen'></iframe></div>
+		</div>
+		<div class="col-2">
+			<div class="globe">
+				<canvas id='workingGlobe' style='cursor: move;'></canvas>
+  			<script type='text/javascript' src='globe/rotating.js'></script>
+			</div>
+		</div>
+	</div>
+	<div class="page_foot">
+		<div class='chart'><h1 align='center' class='head'>World Chart</h1>
+			<div class='top'>Fleetwood Mac</div>
+			<div class='top'>The Black Keys</div>
+			<div class='top'>The Beatles</div>
+			<div class='top'>Cage The Elephant</div>
+			<div class='top'>The Killers</div>
+		</div>
+		<p>©Song TV 2018</p>
+	</div>
 </body>
 </html>
