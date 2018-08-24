@@ -84,13 +84,13 @@
   // Special code to handle high-density displays (e.g. retina, some phones)
   // In the future, Planetary.js will handle this by itself (or via a plugin).
   if (window.devicePixelRatio == 2) {
-    canvas.width = 800;
-    canvas.height = 800;
+    canvas.width = 600;
+    canvas.height = 600;
     context = canvas.getContext('2d');
     context.scale(2, 2);
   } else {
-    canvas.width = window.innerWidth*.65;
-    canvas.height = window.innerHeight-80;
+    canvas.width = 600;
+    canvas.height = 600;
   }
 
   // Draw that globe!
